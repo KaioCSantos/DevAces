@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/stylereciclagem.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
+    <link href="styles/media.css" rel="stylesheet">
+    <link rel="shortcut icon" href="components/images/folha.png">
+
+
+    <title>Reciclagem</title>
+</head>
+<body>
+    
+    <header>
+        <div id="title">
+            <h1>ECOTEC</h1>
+        </div>
+
+        <ul>
+            <a href="index.html"><li>Início</li></a>
+            <a href="energia.html"><li>Energia</li></a>
+            <a href="pamb.html"><li>Preservação Ambiental</li></a>
+            <a href="reciclagem.html"><li>Reciclagem</li></a>
+
+        </ul>
+    </header>
+
+    <div id="conteudo">
+
+        <div id="BTNs">
+            <center>
+                <audio controls="controls" src="components/audios/Reciclagem.mp3"></audio><br>
+                <button name="increase-font" id="increase-font" type="button" title="Aumentar fonte" class="btn btn-primary">A +</button>
+                <button name="decrease-font" id="decrease-font" type="button" title="Diminuir fonte" class="btn btn-secondary">A -</button>
+            </center>    
+        </div>
+
+        <div id="ConteudoP">
+        
+            <H1 id="TP">Reciclagem</H1>
+            <div id="Pimg">
+                <center><img id="imgEN" src="components/images/reciclagem.jpg" alt="simbolo reciclagem"></center>
+            </div>
+            <P>
+                Reciclagem é um processo de transformação de matéria prima de forma que ela possa ser reaproveitada sem produzir mais lixo para o nosso planeta.
+            </P>
+            <P>
+                A reciclagem é fundamental na ajuda ao meio ambiente, principalmente por ajudar na redução de lixo descartado na natureza e é um dos componentes dos “3 R's”: reduzir, reutilizar e reciclar.
+            </P>
+            
+            <H2>COMO SURGIU A RECICLAGEM?</H2>
+            <P>
+                Com a evolução, o homem passou a produzir mais e mais lixo, e com isso, foi despertada uma preocupação em relação ao descarte desse lixo, 
+                já que isso poderia nos causar sérios problemas a longo prazo. Pensando em soluções para este problema, surgiu a ideia da reciclagem.
+            </P>
+            <H2>POR QUE É TÃO IMPORTANTE RECICLAR?</H2>
+            <P>
+                <b id="TP">Vejamos algumas vantagens da reciclagem.</b>
+
+                   <li id="VReci">Ajuda a diminuir a poluição da água, do solo e do ar; a reduzir a acumulação progressiva de resíduos;</li><br>
+                   <li id="VReci">No reaproveitamento de materiais;</li><br>
+                   <li id="VReci">Na melhoria da qualidade de vida da população; na geração de empregos;</li><br>
+                   <li id="VReci"> Na formação e desenvolvimento da consciência ecológica;</li><br>
+                   <li id="VReci">Na valorização da limpeza pública das cidades, responsabilidade social e ambiental;</li><br>
+                   <li id="VReci">Utilização racional dos recursos naturais;</li>
+            </P>
+            <P>
+                Além de serem reaproveitados e transformados em novas embalagens e produtos, o conceito de reciclagem estende-se à 
+                arte e ao artesanato atribuindo maior valor ao produto artístico uma vez que hoje em dia, a palavra de ordem é “reutilizar”.
+            </P>
+            <H2>COMO RECICLAR?</H2>
+            <P>
+                Para alguns é fácil ter o hábito da reciclagem, principalmente para aqueles que moram em cidades com coleta reciclável, para esses,
+                 basta separar o lixo em sua própria casa e colocar em sua lixeira, assim, o caminhão vem e leva o lixo para ser reciclado.
+            </P>
+            <div id="Pimg">
+                <center><img id="imgEN" src="components/images/garrafinha.jpg" alt="garrafas plásticas"></center>
+            </div>
+            <P>
+                Para aqueles que não têm este benefício, é apenas um pouco mais complicado. Após um período separando o lixo reciclável, 
+                basta levá-lo ao centro de reciclagem mais próximo. Um tipo de separação reciclagem mais acessível são as “lixeiras coloridas”:
+            </P>
+            <P>
+                Cestos de reciclagem de resíduos no Brasil:
+            </P>
+            <P>
+                <B id="azul">Azul: </B>Papel/papelão
+            </P>
+            <P>
+                <B id="vermelho">Vermelho: </B>Plástico
+            </P>
+            <P>
+                <B id="verde">Verde: </B>Vidro
+            </P>
+            <P>
+                <B id="amarelo">Amarelo: </B>Metal
+            </P>
+            <P>
+                <B id="preto">Preto: </B>Madeira
+            </P>
+            <P>
+                <B id="laranja">Laranja: </B>Resíduos perigosos
+            </P>
+            <P>
+                <B id="branco">Branco: </B>Resíduo hospitalar
+            </P>
+            <P>
+                <B id="roxo">Roxo: </B>Resíduos radioativos
+            </P>
+            <P>
+                <B id="marrom">Marrom: </B>Resíduos orgânicos
+            </P>
+            <P>
+                <B id="cinza">Cinza: </B>Resíduo geralmente não reciclável, misturado ou contaminado, não sendo possível de separação.
+            </P>
+                
+        </div>    
+
+    </div>
+
+</body>
+<script>
+                // BOTÃO AUMENTAR/DIMINUIR FONTE
+
+                window.onload = function() {
+                var elementBody = document.querySelector('body');
+                var elementBtnIncreaseFont = document.getElementById('increase-font');
+                var elementBtnDecreaseFont = document.getElementById('decrease-font');
+                // Padrão de tamanho, equivale a 100% do valor definido no Body
+                var fontSize = 100;
+                // Valor de incremento ou decremento, equivale a 10% do valor do Body
+                var increaseDecrease = 10;
+
+                // Evento de click para aumentar a fonte
+                elementBtnIncreaseFont.addEventListener('click', function(event) {
+                    fontSize = fontSize + increaseDecrease;
+                    elementBody.style.fontSize = fontSize + '%';
+                });
+
+                // Evento de click para diminuir a fonte
+                elementBtnDecreaseFont.addEventListener('click', function(event) {
+                    fontSize = fontSize - increaseDecrease;
+                    elementBody.style.fontSize = fontSize + '%';
+                });
+            }
+</script>
+</html>
